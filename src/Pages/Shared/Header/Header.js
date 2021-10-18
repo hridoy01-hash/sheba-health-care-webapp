@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Navbar,Button } from 'react-bootstrap';
 import './Header.css'
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import logo from '../../../images/lofo.jpg'
 
 
@@ -33,10 +33,15 @@ const Header = () => {
     
     <NavLink to="/services" style={{textDecoration:"none",fontSize:"20px", marginRight:"10px",fontWeight:"bold",padding:"6px",color:"black"}} activeStyle={activeStyle}>Service</NavLink>
     
-    <NavLink to="/aboutus" style={{textDecoration:"none",fontSize:"20px", marginRight:"10px",fontWeight:"bold",padding:"6px",color:"black"}} activeStyle={activeStyle}>Meet Doctors</NavLink>
+    <NavLink to="/meetdoctor" style={{textDecoration:"none",fontSize:"20px", marginRight:"10px",fontWeight:"bold",padding:"6px",color:"black"}} activeStyle={activeStyle}>Meet Doctors</NavLink>
     
     <NavLink to="/registration" style={{textDecoration:"none",fontSize:"20px", marginRight:"10px",fontWeight:"bold",padding:"6px",color:"black"}} activeStyle={activeStyle}>About </NavLink>
-    <Button style={{color:"black"}} variant="outline-primary">Book An Appointment <i className="fas fa-angle-double-right"></i></Button>
+   <Link to="/appoinment">
+   <Button style={{color:"black",marginRight:"10px"}} variant="outline-primary"> Appointment <i className="fas fa-angle-double-right"></i></Button>
+   </Link>
+    <Link to="/login">
+    <Button style={{color:"black"}} variant="outline-primary">Login <i className="fas fa-sign-in-alt"></i></Button>
+    </Link>
     </Navbar.Collapse>
     </Container>
   </Navbar>
