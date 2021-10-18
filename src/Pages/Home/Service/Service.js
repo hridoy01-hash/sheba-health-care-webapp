@@ -1,10 +1,12 @@
 import React from 'react';
 import { Card, Col,Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import useAuth from '../../../hooks/useAuth';
 import './Service.css'
 const Service = (props) => {
-    const {name,img,discreption} = props.service
-
+    const {name,img,discreption,serviceId} = props.service
+   
+    const {user} = useAuth();
     return (
         <div className="Card">
             <Col>
@@ -15,9 +17,13 @@ const Service = (props) => {
           <Card.Text className="text-justify">
             {discreption.slice(0,98)}
           </Card.Text>
-       <Link to="/">
+      { !user.email? <Link to="/login">
+       <Button style={{color:"black"}} variant="outline-primary">Details More</Button>
+       </Link>:
+       <Link to ="">
        <Button style={{color:"black"}} variant="outline-primary">Details More</Button>
        </Link>
+       }
    
         </Card.Body>
       </Card>

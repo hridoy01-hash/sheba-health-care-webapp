@@ -3,6 +3,7 @@ import { Container, Navbar,Button } from 'react-bootstrap';
 import './Header.css'
 import { Link, NavLink } from 'react-router-dom';
 import logo from '../../../images/lofo.jpg'
+import useAuth from '../../../hooks/useAuth';
 
 
 
@@ -16,8 +17,11 @@ const Header = () => {
         borderRadius:"4px"
         
     }
+
+    const {user,logout} = useAuth();
     
     return (
+        
         <div>
            <Navbar bg="light" variant="light">
     <Container className="mt-3">
@@ -40,7 +44,9 @@ const Header = () => {
    <Button style={{color:"black",marginRight:"10px"}} variant="outline-primary"> Appointment <i className="fas fa-angle-double-right"></i></Button>
    </Link>
     <Link to="/login">
-    <Button style={{color:"black"}} variant="outline-primary">Login <i className="fas fa-sign-in-alt"></i></Button>
+   { !user?.email? <Button style={{color:"black"}} variant="outline-primary">Login <i className="fas fa-sign-in-alt"></i></Button>:
+   <Button onClick={logout} style={{color:"black"}} variant="outline-primary">Logout <i className="fas fa-user-plus"></i> {user.displayName}</Button>
+   }
     </Link>
     </Navbar.Collapse>
     </Container>
