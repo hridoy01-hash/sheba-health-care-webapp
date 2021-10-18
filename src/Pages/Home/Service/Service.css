@@ -1,0 +1,10 @@
+.Card{
+    border-radius: 0;
+    border: 0;
+}
+.Card:hover {
+    transform: scale(1.1);
+  }
+.Card {
+    transition: transform 0.2s ease;
+  }
