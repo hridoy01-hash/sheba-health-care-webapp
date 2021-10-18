@@ -37,9 +37,6 @@ function App() {
          <Route path="/about">
            <About></About>
          </Route>
-         {/* <Route path="/services">
-           <Services></Services>
-         </Route> */}
          <PrivateRoute exact path="/services/:servicesId">
           <DetailsService></DetailsService>
          </PrivateRoute>
