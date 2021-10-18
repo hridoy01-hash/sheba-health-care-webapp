@@ -4,6 +4,7 @@ import './App.css';
 import AuthProvider from './Context/AuthProvider';
 import About from './Pages/About/About';
 import Appoinment from './Pages/Appoinment/Appoinment';
+import DetailsService from './Pages/DetailsService/DetailsService';
 import Home from './Pages/Home/Home/Home';
 import Services from './Pages/Home/Services/Services';
 import Login from './Pages/Login/Login';
@@ -27,18 +28,21 @@ function App() {
          <Route exact path="/home">
           <Home></Home>
          </Route>
-         <Route path="/meetdoctor">
+         <PrivateRoute path="/meetdoctor">
            <MeetDoctor></MeetDoctor>
-         </Route>
+         </PrivateRoute>
          <PrivateRoute path="/appoinment">
            <Appoinment></Appoinment>
          </PrivateRoute>
          <Route path="/about">
            <About></About>
          </Route>
-         <Route path="/services">
+         {/* <Route path="/services">
            <Services></Services>
-         </Route>
+         </Route> */}
+         <PrivateRoute exact path="/services/:servicesId">
+          <DetailsService></DetailsService>
+         </PrivateRoute>
          <Route path="/login">
            <Login></Login>
          </Route>

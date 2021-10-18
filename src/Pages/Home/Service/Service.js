@@ -17,13 +17,10 @@ const Service = (props) => {
           <Card.Text className="text-justify">
             {discreption.slice(0,98)}
           </Card.Text>
-      { !user.email? <Link to="/login">
-       <Button style={{color:"black"}} variant="outline-primary">Details More</Button>
-       </Link>:
-       <Link to ="">
+       <Link to={`/services/${serviceId}`}>
        <Button style={{color:"black"}} variant="outline-primary">Details More</Button>
        </Link>
-       }
+       
    
         </Card.Body>
       </Card>

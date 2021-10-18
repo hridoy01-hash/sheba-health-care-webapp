@@ -25,21 +25,20 @@ const Header = () => {
         <div>
            <Navbar bg="light" variant="light">
     <Container className="mt-3">
-    <NavLink to="/home">
+    <NavLink to="/home" style={{textDecoration:"none",fontSize:"20px", marginRight:"10px",fontWeight:"bold",padding:"6px",color:"black"}} activeStyle={activeStyle} >
        <img style={{height:"48px"}} src={logo} alt="" /> 
-    </NavLink>
-    <span>Sheba Health Care</span>
+       <span>Sheba Health Care</span>
+    </NavLink> 
     
     {/* NavLink for Route */}
 
     <Navbar.Collapse className="me-auto nav-iteam justify-content-end">
     <NavLink to="/home" style={{textDecoration:"none",fontSize:"20px", marginRight:"10px",fontWeight:"bold",padding:"6px",color:"black"}} activeStyle={activeStyle} >Home</NavLink>
     
-    <NavLink to="/services" style={{textDecoration:"none",fontSize:"20px", marginRight:"10px",fontWeight:"bold",padding:"6px",color:"black"}} activeStyle={activeStyle}>Service</NavLink>
-    
-    <NavLink to="/meetdoctor" style={{textDecoration:"none",fontSize:"20px", marginRight:"10px",fontWeight:"bold",padding:"6px",color:"black"}} activeStyle={activeStyle}>Meet Doctors</NavLink>
+    {/* <NavLink to="/services" style={{textDecoration:"none",fontSize:"20px", marginRight:"10px",fontWeight:"bold",padding:"6px",color:"black"}} activeStyle={activeStyle}>Service</NavLink> */}
     
     <NavLink to="/about" style={{textDecoration:"none",fontSize:"20px", marginRight:"10px",fontWeight:"bold",padding:"6px",color:"black"}} activeStyle={activeStyle}>About </NavLink>
+    <NavLink to="/meetdoctor" style={{textDecoration:"none",fontSize:"20px", marginRight:"10px",fontWeight:"bold",padding:"6px",color:"black"}} activeStyle={activeStyle}>Meet Doctors</NavLink>
    <Link to="/appoinment">
    <Button style={{color:"black",marginRight:"10px"}} variant="outline-primary"> Appointment <i className="fas fa-angle-double-right"></i></Button>
    </Link>
