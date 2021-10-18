@@ -35,7 +35,7 @@ const Header = () => {
     
     <NavLink to="/meetdoctor" style={{textDecoration:"none",fontSize:"20px", marginRight:"10px",fontWeight:"bold",padding:"6px",color:"black"}} activeStyle={activeStyle}>Meet Doctors</NavLink>
     
-    <NavLink to="/registration" style={{textDecoration:"none",fontSize:"20px", marginRight:"10px",fontWeight:"bold",padding:"6px",color:"black"}} activeStyle={activeStyle}>About </NavLink>
+    <NavLink to="/about" style={{textDecoration:"none",fontSize:"20px", marginRight:"10px",fontWeight:"bold",padding:"6px",color:"black"}} activeStyle={activeStyle}>About </NavLink>
    <Link to="/appoinment">
    <Button style={{color:"black",marginRight:"10px"}} variant="outline-primary"> Appointment <i className="fas fa-angle-double-right"></i></Button>
    </Link>

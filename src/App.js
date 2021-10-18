@@ -1,8 +1,10 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router,Switch,Route} from 'react-router-dom';
 import './App.css';
+import About from './Pages/About/About';
 import Appoinment from './Pages/Appoinment/Appoinment';
 import Home from './Pages/Home/Home/Home';
+import Services from './Pages/Home/Services/Services';
 import Login from './Pages/Login/Login';
 import MeetDoctor from './Pages/MeetDoctor/MeetDoctor';
 import NotFound from './Pages/NotFound/NotFound';
@@ -27,6 +29,12 @@ function App() {
          </Route>
          <Route path="/appoinment">
            <Appoinment></Appoinment>
+         </Route>
+         <Route path="/about">
+           <About></About>
+         </Route>
+         <Route path="/services">
+           <Services></Services>
          </Route>
          <Route path="/login">
            <Login></Login>
