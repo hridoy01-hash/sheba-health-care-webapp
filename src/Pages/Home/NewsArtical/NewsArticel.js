@@ -18,10 +18,10 @@ const NewsArticel = () => {
     <div className="card-body">
       <h5 className="card-title">Daily Healthy Routine & Benefits From It</h5>
       <p className="card-text">At vero eos et accusamus et iusto odio dignissimos duci mus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non</p>
-      <button className="btn btn-outline-primary">Read More</button>
+      <button className="btn btn-outline-success">Read More</button>
     </div>
     <div className="card-footer text-center">
-      <small className="text-muted">Jun 25, 2021 | Devid Smith</small>
+      <small className="text-primary">Jun 25, 2021 | Devid Smith</small>
     </div>
   </div>
   <div className="card ps-3">
@@ -29,10 +29,10 @@ const NewsArticel = () => {
     <div className="card-body">
       <h5 className="card-title">Medical Health During Pandemic & After</h5>
       <p className="card-text">At vero eos et accusamus et iusto odio dignissimos duci mus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non</p>
-      <button className="btn btn-outline-primary">Read More</button>
+      <button className="btn btn-outline-success">Read More</button>
     </div>
     <div className="card-footer text-center">
-      <small className="text-muted">Jun 25, 2021 | Rojer Rosna</small>
+      <small className="text-primary">Jun 25, 2021 | Rojer Rosna</small>
     </div>
   </div>
   <div className="card ps-3">
@@ -40,10 +40,10 @@ const NewsArticel = () => {
     <div className="card-body">
       <h5 className="card-title">Tips From Neuro Surgeon In Your City</h5>
       <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-      <button className="btn btn-outline-primary">Read More</button>
+      <button className="btn btn-outline-success">Read More</button>
     </div>
     <div className="card-footer text-center">
-      <small className="text-muted ">Jun 25, 2021 | Thomas Smith</small>
+      <small className="text-primary ">Jun 25, 2021 | Thomas Smith</small>
     </div>
   </div>
 </div>

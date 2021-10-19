@@ -1,4 +1,5 @@
 import React from 'react';
+import Subscribe from '../../Subscribe/Subscribe';
 import Baner from '../Baner/Baner';
 import FrequentlyQuestion from '../FrequentlyQuestion/FrequentlyQuestion';
 import NewsArticel from '../NewsArtical/NewsArticel';
@@ -12,7 +13,8 @@ const Home = () => {
             <Baner></Baner> 
             <Services></Services>
             <NewsArticel></NewsArticel>
-            <FrequentlyQuestion></FrequentlyQuestion>  
+            <FrequentlyQuestion></FrequentlyQuestion> 
+            <Subscribe></Subscribe> 
         </div>
     );
 };
