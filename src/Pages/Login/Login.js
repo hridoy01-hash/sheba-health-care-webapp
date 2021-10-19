@@ -16,6 +16,7 @@ const Login = () => {
     className="mb-3"
   >
     <Form.Control onBlur={handleEmail} type="email" placeholder="name@example.com" />
+    
   </FloatingLabel>
   <FloatingLabel controlId="floatingPassword" label="Password">
     <Form.Control onBlur={handlePassword} type="password" placeholder="Password" />

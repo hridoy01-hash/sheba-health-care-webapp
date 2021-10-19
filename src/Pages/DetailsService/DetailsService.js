@@ -18,11 +18,11 @@ const DetailsService = () => {
     return (
         <div className="mb-5">
             <Container>
-            <Row xs={1}  >
+            <Row xs={1} className="text-center"  >
     <Col>
-      <Card>
-        <Card.Img variant="top" src={details?.img} />
-        <Card.Body>
+      <Card style={{width:"300px"}}>
+        <Card.Img  variant="top" src={details?.img} />
+        <Card.Body >
           <Card.Title>{details?.name}</Card.Title>
           <Card.Text>
             {details?.discreption}

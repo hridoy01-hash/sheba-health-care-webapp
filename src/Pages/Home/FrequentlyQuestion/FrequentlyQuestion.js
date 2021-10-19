@@ -1,6 +1,7 @@
 import React from 'react';
-import { Accordion, Container, FloatingLabel, Form } from 'react-bootstrap';
+import { Accordion, Container,} from 'react-bootstrap';
 import faq from '../../../images/faq-img.jpg'
+import './FrequentlyQuestion.css'
 const FrequentlyQuestion = () => {
     return (
         <Container>
@@ -10,10 +11,10 @@ const FrequentlyQuestion = () => {
     <div className="mt-5">
         
         <div className="row">
-            <div className="col-md-6">
-            <img src={faq}alt="" />
+            <div className=" col-sm-12 col-md-6">
+            <img  src={faq}alt="" />
             </div>
-            <div className="col-md-6">
+            <div className="col-sm-12 col-md-6">
             <Accordion defaultActiveKey="0" flush>
   <Accordion.Item eventKey="0">
     <Accordion.Header>What is Medi solution?</Accordion.Header>
@@ -30,13 +31,7 @@ const FrequentlyQuestion = () => {
   <Accordion.Item eventKey="2">
     <Accordion.Header>How competent our total treatment?</Accordion.Header>
     <Accordion.Body>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-      est laborum.
+    Our plan of action entails that people don't just need a policy; they need a plan. The planning producers are composed of independent insurance professionals who offer high quality insurance, financial products, and services to the individual and business
     </Accordion.Body>
   </Accordion.Item>
   <Accordion.Item eventKey="3">

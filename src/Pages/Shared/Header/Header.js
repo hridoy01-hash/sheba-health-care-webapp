@@ -23,8 +23,9 @@ const Header = () => {
     return (
         
         <div>
-           <Navbar bg="light" variant="light">
+        <Navbar collapseOnSelect expand="sm" bg="light" variant="light">
     <Container className="mt-3">
+        <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
     <NavLink to="/home" style={{textDecoration:"none",fontSize:"20px", marginRight:"10px",fontWeight:"bold",padding:"6px",color:"black"}} activeStyle={activeStyle} >
        <img style={{height:"48px"}} src={logo} alt="" /> 
        <span>Sheba Health Care</span>
@@ -32,7 +33,7 @@ const Header = () => {
     
     {/* NavLink for Route */}
 
-    <Navbar.Collapse className="me-auto nav-iteam justify-content-end">
+    <Navbar.Collapse id="responsive-navbar-nav" className="me-auto nav-iteam justify-content-end">
     <NavLink to="/home" style={{textDecoration:"none",fontSize:"20px", marginRight:"10px",fontWeight:"bold",padding:"6px",color:"black"}} activeStyle={activeStyle} >Home</NavLink>
     
     <NavLink to="/about" style={{textDecoration:"none",fontSize:"20px", marginRight:"10px",fontWeight:"bold",padding:"6px",color:"black"}} activeStyle={activeStyle}>About </NavLink>

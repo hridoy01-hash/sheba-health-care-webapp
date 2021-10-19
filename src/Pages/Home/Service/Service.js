@@ -17,7 +17,7 @@ const Service = (props) => {
             {discreption.slice(0,98)}
           </Card.Text>
        <Link to={`/services/${serviceId}`}>
-       <Button style={{color:"black"}} variant="outline-primary">Details More</Button>
+       <Button style={{color:"black"}} variant="outline-primary">Booking {name.toLowerCase()}</Button>
        </Link>
        
    
