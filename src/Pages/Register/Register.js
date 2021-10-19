@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
 
 const Register = () => {
-  const {handleGoogleSignIn,handleGithubSugnIn,handleEmail,handlePassword,handleSignup} = useAuth();
+  const {handleGoogleSignIn,handleGithubSugnIn,handleEmail,handlePassword,handleSignup,handleName} = useAuth();
     return (
         <div className="w-50 mx-auto ">
     <p className="text-center text-muted mt-3">Fell Free Stay With Us</p>
@@ -14,7 +14,7 @@ const Register = () => {
     label="Enter Name"
     className="mb-3"
   >
-    <Form.Control type="text" placeholder="Enter Name" />
+    <Form.Control onBlur={handleName} type="text" placeholder="Enter Name" />
   </FloatingLabel>
 
   <FloatingLabel
