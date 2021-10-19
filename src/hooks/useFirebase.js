@@ -9,6 +9,7 @@ const useFirebase=()=>{
     const [email,setEmail] = useState('')
     const [password,setPassword] = useState('')
     const [name,setName] = useState('')
+    const [error,setError] = useState('')
     const [isLoading, setIsLoading] = useState(true);
     const auth = getAuth();
     const googleProvider = new GoogleAuthProvider();
@@ -21,6 +22,10 @@ const useFirebase=()=>{
         .then(result =>{
         const user = result.user;
         setUser(user);
+        })
+        .catch((error) => {
+          const errorMessage = error.message;
+        setError(errorMessage);
         })
         .finally(() => setIsLoading(false));
         
@@ -35,6 +40,10 @@ const useFirebase=()=>{
         const user = result.user;
         setUser(user);
        })
+       .catch((error) => {
+        const errorMessage = error.message;
+      setError(errorMessage);
+      })
      .finally(() => setIsLoading(false));
     }
 
@@ -58,8 +67,8 @@ const useFirebase=()=>{
         // Profile updated!
         // ...
       }).catch((error) => {
-        // An error occurred
-        // ...
+        const errorMessage = error.message;
+      setError(errorMessage);
       });
     }
 
@@ -70,6 +79,10 @@ const useFirebase=()=>{
       handleUserName();
       const user = result.user
       setUser(user)
+    })
+    .catch((error) => {
+      const errorMessage = error.message;
+    setError(errorMessage);
     })
     .finally(() => setIsLoading(false));
 
@@ -83,6 +96,10 @@ const useFirebase=()=>{
     .then((result) => {
       const user = result.user
       setUser(user)
+    })
+    .catch((error) => {
+      const errorMessage = error.message;
+    setError(errorMessage);
     })
     .finally(() => setIsLoading(false));
    }
@@ -110,6 +127,10 @@ const useFirebase=()=>{
       setIsLoading(true)
         setUser({})
       })
+      .catch((error) => {
+        const errorMessage = error.message;
+      setError(errorMessage);
+      })
       .finally(() => setIsLoading(false));
    }
 
@@ -117,6 +138,7 @@ const useFirebase=()=>{
     return{
         user,
         isLoading,
+        error,
         handleGoogleSignIn,
         handleGithubSugnIn,
         logout,
@@ -124,7 +146,9 @@ const useFirebase=()=>{
         handlePassword,
         handleSignup,
         handleLogin,
-        handleName
+        handleName,
+        
+
 
 
     }

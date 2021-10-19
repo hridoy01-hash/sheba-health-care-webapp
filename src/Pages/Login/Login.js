@@ -5,7 +5,7 @@ import useAuth from '../../hooks/useAuth';
 
 
 const Login = () => {
-  const {handleGoogleSignIn,handleGithubSugnIn,handleEmail,handlePassword,handleLogin} = useAuth();
+  const {handleGoogleSignIn,handleGithubSugnIn,handleEmail,handlePassword,handleLogin,error} = useAuth();
     return (
     <div className="w-50 mx-auto">     
     <p className="text-center text-muted mt-3 ">Want Conecetd with us?</p>
@@ -18,6 +18,8 @@ const Login = () => {
     <Form.Control onBlur={handleEmail} type="email" placeholder="name@example.com" />
     
   </FloatingLabel>
+  
+  <p className="text-danger">{error}</p>
   <FloatingLabel controlId="floatingPassword" label="Password">
     <Form.Control onBlur={handlePassword} type="password" placeholder="Password" />
   </FloatingLabel>
