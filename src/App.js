@@ -6,7 +6,6 @@ import About from './Pages/About/About';
 import Appoinment from './Pages/Appoinment/Appoinment';
 import DetailsService from './Pages/DetailsService/DetailsService';
 import Home from './Pages/Home/Home/Home';
-import Services from './Pages/Home/Services/Services';
 import Login from './Pages/Login/Login';
 import MeetDoctor from './Pages/MeetDoctor/MeetDoctor';
 import NotFound from './Pages/NotFound/NotFound';

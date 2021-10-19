@@ -16,9 +16,9 @@ const DetailsService = () => {
       },[]);
 
     return (
-        <div>
+        <div className="mb-5">
             <Container>
-            <Row xs={1} md={2} >
+            <Row xs={1}  >
     <Col>
       <Card>
         <Card.Img variant="top" src={details?.img} />

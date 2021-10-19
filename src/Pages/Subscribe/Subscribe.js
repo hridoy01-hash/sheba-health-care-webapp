@@ -16,7 +16,7 @@ const Subscribe = () => {
     />
     <label htmlFor="floatingInputCustom">Email address</label>
     </Form.Floating>
-    <Button variant="outline-warning">Lets Us <i class="fas fa-paper-plane"></i></Button>
+    <Button className="fw-bold" variant="outline-warning">Lets Us <i class="fas fa-paper-plane"></i></Button>
     </div>
             </div>
         </div>

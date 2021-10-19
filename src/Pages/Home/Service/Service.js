@@ -6,7 +6,6 @@ import './Service.css'
 const Service = (props) => {
     const {name,img,discreption,serviceId} = props.service
    
-    const {user} = useAuth();
     return (
         <div className="Card">
             <Col>
